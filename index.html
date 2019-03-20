@@ -1,9 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Liquid Carrot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Liquid Carrot</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/pulse/bulmaswatch.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-tooltip@2.0.2/dist/css/bulma-tooltip.min.css">
+  <!-- END Stylesheets -->
+  
+  <!-- Scripts -->
+  <script async defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- END Scripts -->
 </head>
 <body>
-<h1>Liquid Carrot - AI</h1>
+  <!-- Application -->
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="navbar is-warning" style="padding: 10px;" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://liquidcarrot.io">
+          <h1 class="title has-text-white">Liquid Carrot</h1>
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample" @click="burger = !burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu" :class="{ 'is-active': burger }">
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <a href="https://liquidcarrot.github.io/carrot/" class="button is-warning">
+              <span class="icon">
+                <i class="fas fa-book"></i>
+              </span>
+              <span><strong>Documentation</strong></span>
+            </a>
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown is-right">
+              <!-- Report an Issue -->
+              <a href="https://github.com/liquidcarrot/carrot/issues/new" class="navbar-item"><span><strong>Report an issue</strong></span></a>
+              <!-- END Report an Issue -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END Navigation -->
+
+    <section class="section is-medium">
+      <div class="container">
+        <!-- Description -->
+        <h1 class="is-size-1"><strong>Carrot</strong> is a free, open source <strong>AI</strong> framework for building <strong>deep learning</strong> models based on Neataptic.</h1>
+        <!-- END Description -->
+
+        <br>
+
+        <!-- Star on GitHub -->
+        <a class="button is-white github-button" href="https://github.com/liquidcarrot/carrot" data-show-count="true" aria-label="Star liquidcarrot/carrot on GitHub">Star</a>
+        <!-- END Star on GitHub -->
+
+        <!-- Follow on Twitter -->
+        <a href="https://twitter.com/LiquidCarrotAI?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @LiquidCarrotAI</a>
+        <!-- END Follow on Twitter -->
+
+        <!-- Download on NPM -->
+        <a href="https://www.npmjs.com/package/@liquid-carrot/carrot">
+          <img src="https://img.shields.io/npm/dm/@liquid-carrot/carrot.svg" alt="NPM Downloads">  
+        </a>
+        <!-- END Download on NPM -->
+
+        <br><br>
+
+        <!-- Installation -->
+        <div class="level">
+          <div class="level-left">
+            <div class="message">
+              <div class="message-body">
+                <span id="npmi">npm i @liquid-carrot/carrot</span>
+                <button class="button is-small is-warning has-text-weight-bold is-inverted" :class="{ 'tooltip': npmi }" style="margin-left: 10px;" data-clipboard-target="#npmi" data-tooltip="Copied to Clipboard" @click="showNPMI">Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Installation -->
+
+        <!-- Link to Docs -->
+        <a href="https://liquidcarrot.github.io/carrot/" class="button is-medium is-warning">
+          <span>See the <strong>docs</strong></span>
+        </a>
+        <!-- END Link to Docs -->
+      </div>
+    </section>
+  </div>
+  <!-- END Application -->
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/neo-async/2.3.0/async.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.5/clipboard.min.js"></script>
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        burger: false,
+        npmi: false
+      },
+      methods: {
+        showNPMI() {
+          let self = this;
+
+          self.npmi = true;
+          setTimeout(function() { self.npmi = false; }, 2000)
+        }
+      },
+      created() {
+        // CHECK: https://codepen.io/burnaDLX/pen/GowJpX
+        new Clipboard('.button');
+      }
+    })
+  </script>
+  <!-- END Scripts -->
 </body>
 </html>
