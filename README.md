@@ -35,7 +35,7 @@
 <p align="center">
   <a href="https://liquidcarrot.github.io/carrot">Documentation</a> •
   <a href="https://www.liquidcarrot.io">Website</a> •
-  <a href="https://liquidcarrot.github.io/carrot">Community</a>
+  <a href="https://twitter.com/LiquidCarrotAI">Community</a>
 </p>
 
 _____
