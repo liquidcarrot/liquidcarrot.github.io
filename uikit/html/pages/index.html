@@ -1,0 +1,84 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Hero (with absolute positionned pseudo element) and nav -->
+<div id="landing-hero" class="hero is-relative is-theme-secondary hero-waves">
+
+    {{> navbar-fade}}
+
+    <!-- Hero caption -->
+    <div id="main-hero" class="hero-body ">
+        <div class="container">
+            <div class="columns is-vcentered is-tablet-portrait">
+                <!-- Caption -->
+                <div class="column is-5 header-caption has-text-left">
+                    <h1 class="landing-title">
+                        Deep Learning in JavaScript
+                    </h1>
+                    <h2 class="subtitle is-5 light-text">
+                      Open-source AI framework for building neural network models with JavaScript
+                    </h2>
+                    <p class="pt-10 pb-10">
+                      <a href="#services" class="button button-cta btn-align btn-outlined is-bold light-btn rounded z-index-2">
+                        Get Started
+                      </a>
+                    </p>
+                </div>
+                <!-- UI Mockup -->
+                <div class="column is-7">
+                  <iframe src="https://codesandbox.io/embed/94xm78rpwp?fontsize=14&hidenavigation=1&view=preview&runonclick=0" title="Chessboard.jsx · RandomVsRandom · v2" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                </div>
+                <!-- /UI Mockup -->
+            </div>
+        </div>
+    </div>
+    <!-- /Hero caption -->
+</div>
+
+<section id="trust" class="section is-large is-relative footer-waves">
+  <div class="container" style="padding-bottom: 200px;">
+    <div class="section-title-wrapper">
+      <h2 class="section-title-landing has-text-centered dark-text">Support Liquid Carrot 😜</h2>
+      <div class="subtitle has-text-centered has-text-grey">Keep contributors alive and caffeinated ☕</div>
+    </div>
+    <div class="content-wrapper">
+      <div class="grid-clients five-grid">
+        <div class="columns is-vcentered">
+          <div class="column is-hidden-mobile"></div>
+          <div class="column">
+            <a><img class="client" src="https://avatars0.githubusercontent.com/u/2888248?s=460&v=4" alt=""></a>
+          </div>
+          <div class="column">
+            <a><img class="client" src="https://avatars2.githubusercontent.com/u/7612464?s=460&v=4" alt=""></a>
+          </div>
+          <div class="column"  style="border-right: 0;">
+            <a><img class="client" src="https://camo.githubusercontent.com/f987ddaa5f54eef946843e9812a26dfffe36fbd8/687474703a2f2f646f6c6c617262697a636c75622e636f6d2f6373732f696d672f7265643430302e706e67" alt=""></a>
+          </div>
+          <div class="column is-hidden-mobile" style="border-left: 0;"></div>
+        </div>
+      </div>
+      <div class="columns has-text-centerd pt-60">
+        <div class="column has-text-centered is-3 is-offset-3">
+          <p class="pb-30 has-text-grey"><strong class="has-text-grey">One-time</strong> donation</p>
+          <!--<a href="https://www.patreon.com/liquidcarrot" class="button button-cta btn-align primary-btn raised rounded">Support</a>-->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="X96APQG39ETYA" />
+            <input type="image" src="https://bulma.io/images/paypal-donate.png" width="170" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+          </form>
+        </div>
+        <div class="column has-text-centered is-3">
+          <p class="pb-30 has-text-grey"><strong class="has-text-grey">Monthly</strong> donation</p>
+          <a href="https://www.patreon.com/liquidcarrot">
+            <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160" alt=""></img>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> footer-dark}}
