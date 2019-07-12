@@ -74,3 +74,14 @@ _____
     </tr>
   </tbody>
 </table>
+
+### Color Scheme
+
+- [Color Palette #1](https://mycolor.space/?hex=%235ECB43&sub=1)
+- [Color Palette #2](https://mycolor.space/?hex=%23FF6513&sub=1)
+
+```css
+$primary: #FF6513;
+$secondary: #5ECB43;
+$accent: #40D040;
+```
