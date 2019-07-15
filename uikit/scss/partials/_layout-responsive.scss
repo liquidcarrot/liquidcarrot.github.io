@@ -32,7 +32,7 @@ TABLE OF CONTENTS
 1. max-width 768px
 ========================================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1088px) {
 
     //Nav items
     .nav-item.is-tab {
@@ -171,7 +171,7 @@ TABLE OF CONTENTS
 1. Between 768px and 1024px portrait orientation
 ========================================================================== */
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     //tablet portrait orientation adjustments
     .columns {
         padding: 0 10%;
