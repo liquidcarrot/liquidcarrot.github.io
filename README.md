@@ -79,3 +79,7 @@ _____
 
 - [Color Palette #1](https://mycolor.space/?hex=%235ECB43&sub=1)
 - [Color Palette #2](https://mycolor.space/?hex=%23FF6513&sub=1)
+
+### Additional Notes
+
+TBD
