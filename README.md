@@ -38,7 +38,8 @@
   <a href="https://twitter.com/LiquidCarrotAI">Community</a>
 </p>
 
-_____
+---
+
 ## Acknowledgements
 
 **Building with great tools**
@@ -83,3 +84,5 @@ _____
 ### Additional Notes
 
 TBD
+
+### Temporary Heading
